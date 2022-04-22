@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <div class="content">
+    <h3>What is this?</h3>
+    <h4>I dont want this</h4>
+    <h1>I love women</h1>
+  </div>
+</div>
+<script>
+  const content = document.querySelector('.content');
+  content.innerHTML = '<h1 class="gone">I love women</h1><h4>Some have mad bunda</h4>';
+
+  const love = document.createElement('h1');
+  love.innerHTML = 'I love women';
+  content.appendChild(love);
+
+  const bunda = document.createElement('h1');
+  bunda.innerHTML = 'There pretty';
+  content.appendChild(bunda);
+
+  const wuvv = document.createElement('h1');
+  wuvv.innerHTML = 'I wuvvv me womannn';
+  content.appendChild(wuvv);
+
+  const food = document.createElement('h1');
+  food.innerHTML = 'I love tacos';
+  content.insertAdjacentElement('beforebegin', food);
+
+  const unwantedElement = document.querySelector('.gone');
+  unwantedElement.remove();
+</script>
+</body>
+</html>
