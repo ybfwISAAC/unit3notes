@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Restaurant Reservation</title>
+    <title>Doctors Appointment</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div class="container">
     <div class="content">
-        <h1>Restaurant Reservation</h1>
+        <h1>Doctors Appointment</h1>
         <div class="row">
             <div>
                 <label for="full">Full Name:</label>
@@ -34,9 +34,9 @@
     const all = document.getElementById('all');
 
     addButton.addEventListener('click', function(e){
-        const newReservation = document.createElement("p")
-        newReservation.innerHTML = `Your reservation at ${time.value} has been set ${full.value}`
-        all.appendChild(newReservation);
+        const newAppointment = document.createElement("p")
+        newAppointment.innerHTML = `Your Appointment at ${time.value} has been set ${full.value}`
+        all.appendChild(newAppointment);
     })
     clearButton.addEventListener('click', function(e){
         fullName.value = " ";
